@@ -6,38 +6,51 @@
 
 @layer base {
   :root {
-    --background: 220 20% 10%;
-    --foreground: 210 20% 90%;
+    /* Backgrounds */
+    --background: 210 40% 98%; /* #F8FAFC */
+    --foreground: 222 47% 11%; /* #0F172A */
 
-    --card: 220 18% 14%;
-    --card-foreground: 210 20% 90%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 222 47% 11%; /* #0F172A */
 
-    --popover: 220 18% 14%;
-    --popover-foreground: 210 20% 90%;
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 222 47% 11%; /* #0F172A */
 
-    --primary: 142 70% 45%;
-    --primary-foreground: 220 20% 10%;
+    /* Primary - Brand / Action */
+    --primary: 217 91% 60%; /* #2563EB */
+    --primary-foreground: 0 0% 100%; /* white */
 
-    --secondary: 220 15% 20%;
-    --secondary-foreground: 210 20% 85%;
+    /* Secondary - Accent */
+    --secondary: 173 80% 40%; /* #14B8A6 */
+    --secondary-foreground: 0 0% 100%; /* white */
 
-    --muted: 220 15% 18%;
-    --muted-foreground: 215 15% 55%;
+    /* Muted */
+    --muted: 210 40% 96%; /* #F1F5F9 */
+    --muted-foreground: 215 16% 47%; /* #475569 */
 
-    --accent: 200 80% 50%;
-    --accent-foreground: 220 20% 10%;
+    /* Accent */
+    --accent: 220 80% 95%; /* #EAF0FF - soft bg */
+    --accent-foreground: 217 91% 60%; /* #2563EB */
 
-    --destructive: 0 65% 50%;
-    --destructive-foreground: 210 20% 98%;
+    /* Destructive */
+    --destructive: 0 84% 60%; /* #EF4444 */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 22%;
-    --input: 220 15% 22%;
-    --ring: 142 70% 45%;
+    /* Borders */
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --input: 214 32% 91%; /* #E2E8F0 */
+    --ring: 217 91% 60%; /* #2563EB */
 
     --radius: 0.5rem;
 
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
+
+    /* Status Colors */
+    --success: 142 71% 45%; /* #22C55E */
+    --warning: 38 92% 50%; /* #F59E0B */
+    --error: 0 84% 60%; /* #EF4444 */
+    --info: 217 91% 60%; /* #3B82F6 */
   }
 }
 
