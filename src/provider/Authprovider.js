@@ -13,14 +13,14 @@ const AuthProvider = ({ children }) => {
                 console.log("AuthProvider message from parent" , message.payload)
 
                 let payload = {}
-                if(message.payload.isOpenInKapture){
+                if(message.payload.isOpenInKapture && message.payload?.auth?._KAPTURECRM_SESSION){
                     payload = {
-                        auth_key:message.payload.auth._KAPTURECRM_SESSION,
+                        auth_key:message.payload?.auth?._KAPTURECRM_SESSION,
                     }
                 }else{
                     payload = {
-                        auth_key : message.payload.auth.MS_SESSION,
-                        vitos_auth_key:message.payload.auth.VITOS_ACCESS_TOKEN,
+                        auth_key : message.payload?.auth?.MS_SESSION,
+                        vitos_auth_key:message.payload?.auth?.VITOS_ACCESS_TOKEN,
                     }
                 }
 
